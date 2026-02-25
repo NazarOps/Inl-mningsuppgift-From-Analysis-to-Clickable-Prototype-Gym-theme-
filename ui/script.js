@@ -1,28 +1,43 @@
-let submit = document.getElementById("loginForm");
+const form = document.getElementById("loginForm");
 
-submit.addEventListener("submit", LoginSucess);
+form.addEventListener("submit", loginSuccess);
 
-function LoginSucess(e) {
-    e.preventDefault();
-    let email = document.getElementById("emailField").value;
-    let password = document.getElementById("passwordField").value;
+function loginSuccess(e) {
+  e.preventDefault();
 
-    if(email == "" || !email.includes("@")) {
-        window.alert("Enter an email!");
-    }
+  const email = document.getElementById("emailField").value.trim();
+  const password = document.getElementById("passwordField").value;
 
-    else if(password =="") {
-        window.alert("Enter a password!");
-    }
 
-    else if(password.length < 8) {
-        window.alert("Your password must be at least 8 characters long!");
-    }
+  const role = document.querySelector('input[name="role"]:checked').value;
 
-    else {
-        window.alert("Login successful!");
-        window.location.href = "components.html";
-    }
-    
+  if (email === "") {
+    alert("Enter an email!");
+    return;
+  }
+
+  if (password === "") {
+    alert("Enter a password!");
+    return;
+  }
+
+  if (password.length < 8) {
+    alert("Your password must be at least 8 characters long!");
+    return;
+  }
+
+  
+  if (role === "staff" && !email.endsWith("@staff.com")) {
+    alert("Staff email must end with @staff.com");
+    return;
+  }
+
+  if (role === "trainer" && !email.endsWith("@trainer.com")) {
+    alert("Trainer email must end with @trainer.com");
+    return;
+  }
+
+
+  alert("Login successful!");
+  window.location.href = "components.html";
 }
-
