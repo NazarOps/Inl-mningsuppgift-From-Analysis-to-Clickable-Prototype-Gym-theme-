@@ -96,3 +96,5 @@ Postconditions:
 
 1.0	2026-02-24	First version of requirements and use-case document
 1.1	2026-02-24	Index.html, Dashboard.html and Login.html implemented
+1.2   2026-02-25  script.js, style.css changed
+
