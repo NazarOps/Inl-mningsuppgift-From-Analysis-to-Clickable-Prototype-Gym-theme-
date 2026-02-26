@@ -75,11 +75,11 @@ Main Flow:
 - The website should display the login form with a role slider
 - User chooses role
 - User inputs their e-mail and password
-- User clicks "Sign up" button
+- User clicks "Sign in" button
 - The system should validate user details
 - The system should verify the user
 - System creates a login session
-- System redirects user to the corresponding dashboard based on their role
+- System redirects user to the dashboard
 
 Alternate Flows: 
 
@@ -90,7 +90,7 @@ Alternate Flows:
 
 ### Postconditions:
 
-- After inputting the correct credentials, the user should be redirected to the corresponding page
+- After inputting the correct credentials, the user should be redirected to the dashboard
 - In case of incorrect credentials, the user will remain on the login page until they enter correct details
 
 --------
@@ -113,9 +113,11 @@ Alternate Flows:
 - 1.0	2026-02-24	First version of requirements and use-case document
 - 1.1	2026-02-24	Index.html, Dashboard.html and Login.html implemented
 - 1.2 2026-02-25  script.js, style.css changed (see commits)
+- 1.3 2026-02-26  script.js, components.html changed. Added membership cancellation functionality
 
 ### Additional Information
 - Components.html should technically only show the componential structure of the website but I decided to do a mini demo of a dashboard layout with newsletter, article and section.
+
 
 
 
