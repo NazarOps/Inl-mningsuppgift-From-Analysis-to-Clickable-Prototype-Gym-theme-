@@ -15,10 +15,10 @@ Clients
 Functional requirements:
 
 - F1. The system should offer a role based login for the user (Clients, PT, Staff)
-- F2. After login, the system should redirect the user to the corresponding dashboard based on their role.
-- F3. Clients should be able to check the newsletter and sign up for gym classes.
-- F4. Clients should be able to cancel their sign ups.
-- F5. Dashboard should show newsletter, information about the gym and membership tirs.
+- F2. After login, the system should redirect the user to the dashboard.
+- F3. Clients should be able to check the newsletter.
+- F4. Clients should be able to cancel their membership.
+- F5. Dashboard should show newsletter, information about the gym and membership tiers.
 - F6. Client should be able to logout and be redirected to the home page.
 
 Non-functional requirements
@@ -51,7 +51,8 @@ Website performance and ease of use accessibility.
 Could Have:
 
 Being able to reorganize your dashboard and move panels around
-Built-in Calendar with your class sign-ups 
+Built-in Calendar with your class sign-ups
+Role based dashboard redirection
 
 Won’t Have:
 
@@ -115,6 +116,7 @@ Alternate Flows:
 
 ### Additional Information
 - Components.html should technically only show the componential structure of the website but I decided to do a mini demo of a dashboard layout with newsletter, article and section.
+
 
 
 
